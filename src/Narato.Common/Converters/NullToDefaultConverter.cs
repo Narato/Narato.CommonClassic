@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace Narato.Common.Converters
 {
-    //Todo: move to shared
     public class NullToDefaultConverter<T> : JsonConverter where T : struct
     {
         public override bool CanConvert(Type objectType)

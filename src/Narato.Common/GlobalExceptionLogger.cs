@@ -1,6 +1,4 @@
 ﻿using Microsoft.ApplicationInsights;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Web.Http.ExceptionHandling;
 
 namespace Narato.Common
