@@ -23,7 +23,7 @@ namespace Narato.Common
             return exception;
         }
 
-        protected override HttpResponseMessage CreateResponse(Exception exception, HttpRequestMessage request)
+        protected virtual HttpResponseMessage CreateResponse(Exception exception, HttpRequestMessage request)
         {
             if (exception is ArgumentNullException)
             {

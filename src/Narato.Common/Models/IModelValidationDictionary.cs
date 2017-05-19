@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace Narato.Common.Models
+﻿namespace Narato.Common.Models
 {
-    public interface IModelValidationDictionary<T> : IDictionary<string, ICollection<T>>
+    public interface IModelValidationDictionary<T>
     {
+        void Add(string field, T item);
+
+        bool ContainsKey(string field);
     }
 }

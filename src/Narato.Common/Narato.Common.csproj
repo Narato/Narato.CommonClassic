@@ -63,6 +63,7 @@
     <Compile Include="GlobalExceptionLogger.cs" />
     <Compile Include="Models\ErrorContent.cs" />
     <Compile Include="Models\IModelValidationDictionary.cs" />
+    <Compile Include="Models\IPaged.cs" />
     <Compile Include="Models\ModelValidationDictionary.cs" />
     <Compile Include="Models\Paged.cs" />
     <Compile Include="Models\ValidationErrorContent.cs" />
