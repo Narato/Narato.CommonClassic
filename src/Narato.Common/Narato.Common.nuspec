@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Narato.CommonClassic</id>
+    <version>0.9.0</version>
+    <title>Narato.CommonClassic</title>
+    <authors>Ronald Verhaegen</authors>
+    <owners>RonaldV</owners>
+    <projectUrl>https://github.com/Narato/Narato.CommonClassic</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET Framework 4.6 of Narato Common library</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright Narato 2017</copyright>
+    <tags>Narato Utils Common</tags>
+  </metadata>
+</package>
