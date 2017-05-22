@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET Framework 4.6 of Narato Common library</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <copyright>Copyright Narato 2017</copyright>
+    <copyright>Copyright 2017 Narato</copyright>
     <tags>Narato Utils Common</tags>
     <dependencies>
       <dependency id="Microsoft.ApplicationInsights" version="2.3.0" />
