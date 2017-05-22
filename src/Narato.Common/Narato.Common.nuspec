@@ -7,10 +7,17 @@
     <authors>Ronald Verhaegen</authors>
     <owners>RonaldV</owners>
     <projectUrl>https://github.com/Narato/Narato.CommonClassic</projectUrl>
+    <iconUrl>http://narato.be/wp-content/uploads/2016/11/narato-icon-logo-64x64-transparant.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET Framework 4.6 of Narato Common library</description>
     <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright Narato 2017</copyright>
     <tags>Narato Utils Common</tags>
+    <dependencies>
+      <dependency id="Microsoft.ApplicationInsights" version="2.3.0" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3" />
+      <dependency id="Newtonsoft.Json" version="10.0.2" />
+    </dependencies>
   </metadata>
 </package>
