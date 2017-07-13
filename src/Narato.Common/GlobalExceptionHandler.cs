@@ -11,6 +11,7 @@ using System.Web.Http.Results;
 
 namespace Narato.Common
 {
+    // TODO rename to ResponseExceptionHandler
     public class GlobalExceptionHandler : ExceptionHandler
     {
         private Exception GetCorrectException(Exception exception)
@@ -40,7 +41,6 @@ namespace Narato.Common
             {
                 var codedException = exception as CodedException;
                 return request.CreateResponse(HttpStatusCode.NotFound, new ErrorContent { Code = codedException.ErrorCode, Message = codedException.Message });
-                //context.Result = new NotFoundResult(request);
             }
             if (exception is ForbiddenException)
             {
