@@ -3,7 +3,7 @@ using System.Web.Http.ExceptionHandling;
 
 namespace Narato.Common
 {
-    public class GlobalExceptionLogger : ExceptionLogger
+    public class ApplicationInsightsExceptionLogger : ExceptionLogger
     {
         public override void Log(ExceptionLoggerContext context)
         {

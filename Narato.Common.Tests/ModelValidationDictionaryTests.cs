@@ -1,4 +1,5 @@
-﻿using Narato.Common.Models;
+﻿using FluentAssertions;
+using Narato.Common.Models;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -7,7 +8,7 @@ namespace Narato.Common.Tests
     public class ModelValidationDictionaryTests
     {
         [Fact]
-        public void SerializeJson_ReturnCorrectJson()
+        public void FilledDictionary_SerializedToJson_ShouldReturnCorrectJson()
         {
             var dictionary = new ModelValidationDictionary<string>();
             dictionary.Add("FirstName", "John");
@@ -15,7 +16,7 @@ namespace Narato.Common.Tests
 
             var json = JsonConvert.SerializeObject(dictionary);
 
-            Assert.Equal(json, "{\"FirstName\":[\"John\"],\"LastName\":[\"Doe\"]}");
+            json.Should().BeEquivalentTo("{\"FirstName\":[\"John\"],\"LastName\":[\"Doe\"]}");
         }
     }
 }

@@ -5,5 +5,7 @@
         void Add(string field, T item);
 
         bool ContainsKey(string field);
+
+        int Count { get; }
     }
 }
