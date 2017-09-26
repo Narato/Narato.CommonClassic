@@ -47,6 +47,11 @@ namespace Narato.Common
                 var codedException = exception as CodedException;
                 return request.CreateResponse(HttpStatusCode.Forbidden, new ErrorContent { Code = codedException.ErrorCode, Message = codedException.Message });
             }
+            if (exception is CodedException)
+            {
+                var codedException = exception as CodedException;
+                return request.CreateResponse(HttpStatusCode.InternalServerError, new ErrorContent { Code = codedException.ErrorCode, Message = codedException.Message });
+            }
             return null;
         }
 
